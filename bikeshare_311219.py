@@ -285,11 +285,11 @@ def user_stats(df, city):
 def main():
 
     while True:
-        # city, month, weekday = get_filters()
+        city, month, weekday = get_filters()
         # default values for faster testing of analysis-functions
-        city = 'washington'
-        month = 'all'
-        weekday = 'all'
+        # city = 'washington'
+        # month = 'all'
+        # weekday = 'all'
 
         # print filters for an user's overview
         print('\n*** your filters: {} (city), {} (month in 2017), {} (weekday)\n'.format(city,
