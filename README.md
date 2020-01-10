@@ -2,11 +2,11 @@
 10th Jan 2020
 
 
-### U.S. Bikeshare anyslsi
+### U.S. Bikeshare analysis
 
 ### Description
 The user can give some input for city, month, weekday (Jan-Jun 2017).
-Afterwards some statistical anylsis is donee. (e.g. most popular hours, stations, user data)
+Afterwards some statistical analysis is done. (e.g. most popular hours, stations, user data)
 
 ### Files used
 The bikeshare data from 3 cities is included:
