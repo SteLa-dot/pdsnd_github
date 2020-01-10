@@ -165,15 +165,9 @@ def drop_nan(df):
 
 def time_stats(df):
     """
-    validation check with number of raws after Nan-dropping and number of rows for analysis
     Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
-
-    # number of total rows after NaN-dropping (count() is zero-based indexing)
-    # necessary for validation check
-    # this line must be on top of this function because the valid df after drop_nan is relevant
-    tot_rows = df.count
 
     start_time = time.time()
 
@@ -199,11 +193,6 @@ def time_stats(df):
 
     print('Most frequent Start Hour: {}'.format(popular_hour))
 
-    tot_rows_month = df.count
-    if tot_rows_month == tot_rows:
-        print('')
-    else:
-        print('-'*40, 'Error, Please check your code. Validation check failed. Dataframes don\'t have the same number of rows after Nan-dropping.\n', '-'*40)
 
     print("\nThis took {} seconds.".format(
         round(time.time() - start_time, 4)))
